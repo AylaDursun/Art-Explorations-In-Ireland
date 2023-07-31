@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Comforter+Brush&display=swap');
+
+:root {
+    --accent-color: rgb(0, 101, 82);
+    --body-text-color: rgb(65, 71, 64);
+    --background-color: rgb(243, 248, 244);
+  }
+  
+
+
+body{
+    font-family: 'Barlow', sans-serif;
+    color: var(--body-text-color);
+    background-color: var(--background-color);
+}
+
+h1{
+    font-family: 'Comforter Brush', cursive;
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: var(--accent-color);
+}
+
+h2{
+    font-family: 'Comforter Brush', cursive;
+    font-size: 70px;
+    text-align: left;
+    margin: -20px, 0, 0, 0;
+    padding: 0, 0, 0, 0;
+    color: var(--accent-color);
+    margin-left: 3rem;
+
+}
+
+h3{
+    font-family: 'Comforter Brush', cursive;
+    font-size: 70px;
+    text-align: center;
+    margin-top: -20px;
+    padding-top: 0px;
+    color: var(--accent-color);
+}
+
+p {
+    letter-spacing: 1.3px;
+    line-height: 130%;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+section {
+    width: 50%;
+    float: left;
+}
