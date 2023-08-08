@@ -15,6 +15,7 @@ body{
     background-color: var(--background-color);
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .title{
@@ -46,6 +47,17 @@ h2{
     color: var(--accent-color);
     margin-left: 3rem;
 
+}
+
+blockquote {
+    font-family: 'Comforter Brush', cursive;
+    font-size: 70px;
+    text-align: center;
+    margin-top: -20px;
+    padding-top: 0px;
+    color: var(--accent-color);
+    display: block; 
+    font-weight: 500;
 }
 
 h3{
@@ -151,6 +163,34 @@ section {
     padding-right: 0;
     grid-column: 2;
 }
+
+.overText {
+    width: 100%;
+}
+
+.textSection {
+    position: absolute;
+    transform: translate(0%, -10%);
+    text-align: center;
+    padding: 12rem;
+}
+
+.textSection h2 {
+    text-align: center;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
 
 
 @media only screen and (max-width: 863px) {
