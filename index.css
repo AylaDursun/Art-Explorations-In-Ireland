@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Comforter+Brush&display=swap');
 
 :root {
-    --accent-color: rgb(20, 93, 51);
+    --accent-color: rgb(42, 110, 19);
     --body-text-color: rgb(65, 71, 64);
-    --background-color: rgb(248, 248, 248);
+    --background-color: rgb(255, 255, 255);
+    --text-shadow-color: rgb(7, 50, 55);
   }
   
 
@@ -12,6 +13,16 @@ body{
     font-family: 'Barlow', sans-serif;
     color: var(--body-text-color);
     background-color: var(--background-color);
+    padding: 0;
+    margin: 0;
+}
+
+.title{
+    color: white;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 h1{
@@ -20,16 +31,17 @@ h1{
     text-align: center;
     margin-bottom: 0px;
     padding-bottom: 0px;
-    color: var(--accent-color);
+    color: white;
     margin-left: 10px;
     margin-right: 10px;
+    text-shadow: 2px 2px 10px var(--text-shadow-color);
 }
 
 h2{
     font-family: 'Comforter Brush', cursive;
     font-size: 70px;
     text-align: left;
-    margin: -20px, 0, 0, 0;
+    margin: 0px;
     padding: 0, 0, 0, 0;
     color: var(--accent-color);
     margin-left: 3rem;
@@ -42,7 +54,8 @@ h3{
     text-align: center;
     margin-top: -20px;
     padding-top: 0px;
-    color: var(--accent-color);
+    text-shadow: 2px 2px 10px var(--text-shadow-color);
+    display: block;
 }
 
 p {
@@ -50,15 +63,95 @@ p {
     line-height: 130%;
     font-size: 18px;
     font-weight: 500;
-    margin-top: -50px;
     margin-left: 3rem;
     margin-right: 3rem;
 }
 
-section {
-    width: 50%;
-    float: left;
+
+
+
+
+.footer {
+    width: 100%;
+    max-height: 58rem;
+    object-fit: cover;
+    object-position: top;
+    margin-top: -8rem;
 }
+
+
+
+.header {
+        position: relative;
+        text-align: center;
+        color: white;
+        min-height: 100vh;
+
+        background-image: url("headerImageV1.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('headerImageV1.png');
+  
+    /* Full height */
+    height: 93vh; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.headerImg {
+    width: 100%;
+    position: absolute;
+    bottom: -15%;
+    left: 0%;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5rem;
+}
+
+section {
+    width: 100%;
+    margin: 30px;
+    grid-column: 1;
+    display:flex;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.halfImg {
+    width: 80%;
+    object-fit: contain;
+    grid-column: 2;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.halfImgBallyvaughan {
+    width: 100%;
+    max-height: 700px;
+    object-fit: contain;
+    display: grid;
+    margin-right: 0;
+    margin-left: auto;
+    padding-right: 0;
+    grid-column: 2;
+}
+
 
 @media only screen and (max-width: 863px) {
     
