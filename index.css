@@ -190,11 +190,66 @@ section {
     opacity: 1;
   }
 
+  .underText {
+    display: none;
+  }
 
+  @media only screen and (max-width: 1247px) {
+    .textSection {
+        padding-top: 16rem;
+    }
+}
 
+@media only screen and (max-width: 1177px) {
+    .textSection {
+        padding-top: 25rem;
+        padding-left: 14rem;
+        padding-right: 14rem;
+    }
 
-@media only screen and (max-width: 863px) {
-    
+    .textSection p {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .overText {
+        width: 110%;
+        margin-left: -5%;
+    }
+}
+
+@media only screen and (max-width: 1107px) {
+    .headerImg {
+        bottom: -10%;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    h1 {
+        line-height: 80%;
+        margin-bottom: 19px;
+    }
+}
+
+@media only screen and (max-width: 974px) {
+    .headerImg {
+        bottom: -5%;
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 5rem;
+    }
+
+    .halfImgBallyvaughan {
+        grid-column: 1;
+    }
+
+    .halfImg {
+        grid-column: 1;
+    }
+
     h2 {
         text-align: center;
         margin: auto;
@@ -213,8 +268,63 @@ section {
         float: none;
         margin: auto;
     }
+
+    .textSection {
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        float: none;
+        margin: auto;
+        grid-column: 1;
+        padding: 0;
+        margin-top: 8rem;
+    }
+
+    .overText {
+        display: block;
+        grid-column: 1;
+        width: 150%;
+        max-height: 700px;
+        object-fit: contain;
+        margin-right: auto;
+        margin-left: -25%;
+        padding-right: 0;
+        margin-top: 8rem;
+    }
+
+    .overlappedRow {
+        display: grid;
+    }
 }
 
+@media only screen and (max-width: 773px) {
+    .overText {
+        display: none;
+    }
+
+    .underText {
+        display: block;
+        width: 100%;
+        margin-top: -20rem;
+    }
+
+    .textSection {
+        display: block;
+        padding: 0;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 584px) {
+    .headerImg {
+        bottom: 0%;
+    }
+
+    .textSection {
+        margin: auto;
+    }
+}
 
 @media only screen and (max-width: 564px) {
 
