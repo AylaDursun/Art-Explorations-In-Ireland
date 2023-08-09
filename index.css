@@ -88,7 +88,7 @@ p {
     max-height: 58rem;
     object-fit: cover;
     object-position: top;
-    margin-top: -8rem;
+    margin-top: -20rem;
 }
 
 
@@ -316,14 +316,47 @@ section {
     }
 }
 
+@media only screen and (max-width: 714px) {
+    .overText {
+        display: none;
+    }
+
+    .underText {
+        display: block;
+        width: 100%;
+        margin-top: -20rem;
+    }
+
+    .textSection {
+        display: block;
+        padding: 0;
+        position: relative;
+    }
+
+    .textSection p {
+        padding: 3rem;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .underText {
+        margin-top: -28rem;
+        width: 180%;
+        margin-left: -15%;
+    }
+
+    .textSection p {
+        padding: 0;
+    }
+
+}
+
 @media only screen and (max-width: 584px) {
     .headerImg {
         bottom: 0%;
     }
 
-    .textSection {
-        margin: auto;
-    }
+
 }
 
 @media only screen and (max-width: 564px) {
