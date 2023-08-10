@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Comforter+Brush&display=swap');
 
 :root {
-    --accent-color: rgb(42, 110, 19);
+    --accent-color: #2a6e13;
     --body-text-color: rgb(65, 71, 64);
     --background-color: rgb(255, 255, 255);
     --text-shadow-color: rgb(7, 50, 55);
@@ -98,6 +98,7 @@ p {
         text-align: center;
         color: white;
         min-height: 100vh;
+        width: 100%;
 
         background-image: url("headerImageV1.png");
         background-attachment: fixed;
@@ -123,9 +124,8 @@ p {
 
 .headerImg {
     width: 100%;
-    position: absolute;
-    bottom: -15%;
-    left: 0%;
+    position: relative;
+    margin-top: -60%;
 }
 
 .row {
@@ -347,6 +347,14 @@ section {
 
     .textSection p {
         padding: 0;
+    }
+
+    .footer {
+        width: 100%;
+        max-height: 58rem;
+        object-fit: cover;
+        object-position: top;
+        margin-top: 5rem;
     }
 
 }
