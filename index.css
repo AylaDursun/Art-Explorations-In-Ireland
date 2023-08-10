@@ -8,6 +8,9 @@
   }
   
 
+  html {
+    overflow-x: hidden;
+  }
 
 body{
     font-family: 'Barlow', sans-serif;
